@@ -64,3 +64,55 @@ double Sensor::GETOFFSET(){
 void Sensor::SETOFFSET(double NEWOFFSET){
 	this->_OFFSET = NEWOFFSET;
 }
+
+double Sensor::GETORIENTATION(){
+	return this->_ORIENTATION;
+}
+void Sensor::SETORIENTATION(double NEWORIENT){
+	this->_ORIENTATION = NEWORIENT;
+}
+
+int Sensor::GETRAWVALS(){
+	return this->_RAW_VALUES;
+}
+void Sensor::SETRAWVALS(int NEWVALS[]){
+	this->_RAW_VALUES = NEWVALS;
+}
+
+int Sensor::GETFILTEREDVALS(){
+	return this->_FILTERED_VALUES;
+}
+void Sensor::SETFILTEREDVALS(int NEWVALS[]){
+	this->_FILTERED_VALUES = NEWVALS;
+}
+
+int Sensor::GETTIME(){
+	return this->_TIME;
+}
+void Sensor::SETTIME(int NEWTIME){
+	this->_TIME = NEWTIME;
+}
+
+bool Sensor::GETFILTERED(){
+	return this->_FILTERED;
+}
+void Sensor::SETFILTERED(bool NEWFILT){
+	this->_FILTERED = NEWFILT;
+}
+
+int Sensor::GETVALUES(){
+	//returns raw values if it has not been filtered
+	// if it was filtered, return the filtered values
+	if(GETFILTERED()){
+		return this->_FILTERED_VALUES;
+	}
+	else{
+		return this->_RAW_VALUES;
+	}
+}
+
+int Sensor::GETBYTELIST(){
+	return this->_BYTE_LIST;
+}
+
+//TODO PACKETS

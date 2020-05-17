@@ -31,6 +31,27 @@ public:
 	double GETOFFSET();
 	void SETOFFSET(double);
 
+	double GETORIENTATION();
+	void SETORIENTATION(double);
+
+	int GETRAWVALS();
+	void SETRAWVALS(int[]);
+
+	int GETFILTEREDVALS();
+	void SETFILTEREDVALS(int[]);
+
+	int GETTIME();
+	void SETTIME(int);
+
+	bool GETFILTERED();
+	void SETFILTERED(bool);
+
+	int GETVALUES();
+
+	int GETBYTELIST();
+
+	//TODO PACKETS
+
 	//sticking things in private for security
 	//until told otherwise
 private:
