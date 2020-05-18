@@ -9,6 +9,11 @@
 #define SENSOR_H_
 #include <string>
 #include <fstream>
+#include <queue>
+//TODO what is the cpp equivalent to the py binascii
+// if there isnt one, i might snag some code for
+// a class to do the work, from the internet with credit and citation
+//#include <binascii>
 using namespace std;
 
 class Sensor {
@@ -50,7 +55,8 @@ public:
 
 	int GETBYTELIST();
 
-	//TODO PACKETS
+	int GETPACKET();
+	void SETPACKET(int);
 
 	//sticking things in private for security
 	//until told otherwise
@@ -73,6 +79,8 @@ private:
 	int _FILTRED_VALUES[];
 	//why are there two??
 	int _FILTERED_VALUES[];
+
+	queue <int> QUEUE;
 
 	int _TIME;
 	int _ERROR;

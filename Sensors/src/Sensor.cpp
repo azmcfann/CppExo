@@ -7,7 +7,12 @@
 
 #include "Sensor.h"
 #include <string>
+//#include <cstring>
 #include <fstream>
+#include <queue>
+//#include <algorithm>//TODO what is the cpp equivalent to the py binascii
+// if there isnt one, i might snag some code for
+// a class to do the work, from the internet with credit and citation
 using namespace std;
 
 //im making assumptions that the byte_list is a list of ints?
@@ -115,4 +120,14 @@ int Sensor::GETBYTELIST(){
 	return this->_BYTE_LIST;
 }
 
-//TODO PACKETS
+int Sensor::GETPACKET(){
+	return this->QUEUE.front();
+}
+void Sensor::SETPACKET(int NEWPACK){
+	//TODO raw packet convert to decimal?
+	this->_PACKET = NEWPACK;
+	this->SETRAWVALS(&NEWPACK);
+}
+
+//TODO PARSE METHOD
+//TODO  BINBIT METHOD
