@@ -10,10 +10,7 @@
 #include <string>
 #include <fstream>
 #include <queue>
-//TODO what is the cpp equivalent to the py binascii
-// if there isnt one, i might snag some code for
-// a class to do the work, from the internet with credit and citation
-//#include <binascii>
+
 using namespace std;
 
 class Sensor {
@@ -57,6 +54,8 @@ public:
 
 	int GETPACKET();
 	void SETPACKET(int);
+
+	int BINTODEC(int);
 
 	//sticking things in private for security
 	//until told otherwise

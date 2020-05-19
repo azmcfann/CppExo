@@ -10,9 +10,6 @@
 //#include <cstring>
 #include <fstream>
 #include <queue>
-//#include <algorithm>//TODO what is the cpp equivalent to the py binascii
-// if there isnt one, i might snag some code for
-// a class to do the work, from the internet with credit and citation
 using namespace std;
 
 //im making assumptions that the byte_list is a list of ints?
@@ -124,10 +121,28 @@ int Sensor::GETPACKET(){
 	return this->QUEUE.front();
 }
 void Sensor::SETPACKET(int NEWPACK){
-	//TODO raw packet convert to decimal?
-	this->_PACKET = NEWPACK;
-	this->SETRAWVALS(&NEWPACK);
+	int CONVERT = this->BINTODEC(NEWPACK);
+	this->_PACKET = CONVERT;
+	this->SETRAWVALS(&CONVERT);
 }
+
 
 //TODO PARSE METHOD
 //TODO  BINBIT METHOD
+
+//converts a given binary to decimal
+//https://www.geeksforgeeks.org/program-binary-decimal-conversion/
+int Sensor::BINTODEC(int INPUT){
+	int NUMBER = INPUT;
+	int DECIMAL = 0;
+	int BASE = 1;
+	int TEMP = NUMBER;
+
+	while(TEMP > 0){
+		int LASTDIG = TEMP % 10;
+		TEMP = TEMP /10;
+		DECIMAL += (LASTDIG * BASE);
+		BASE = BASE*2;
+	}
+	return DECIMAL;
+}
