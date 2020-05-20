@@ -8,8 +8,8 @@
 #include "Accel.h"
 using namespace std;
 
-Accel::Accel(string name, int byte_list[], string side) {
-	this->s(name, byte_list, side, 1);
+Accel::Accel(string name, int byte_list[], string side) : Sensor(name, byte_list, side, 1); {
+
 
 }
 
@@ -18,5 +18,5 @@ Accel::~Accel() {
 }
 
 double SUPOFFSET(){
-	return this.s.GETOFFSET();
+	return GETOFFSET();
 }
