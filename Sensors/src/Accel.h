@@ -16,9 +16,16 @@ public:
 	virtual ~Accel();
 
 	double SUPOFFSET();
+    double SUPORIENTATION();
+
+    bool RESET();
+
+    void SUPSETRAWVAL();
 
 private:
-	Sensor s;
+    int valX[];
+    int valY[];
+    int valZ[];
 };
 
 #endif /* ACCEL_H_ */

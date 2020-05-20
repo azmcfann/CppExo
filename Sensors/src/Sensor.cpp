@@ -16,8 +16,6 @@ using namespace std;
 //side is a descriptor of the location of the sensor
 
 Sensor::Sensor(string name, int byte_list[], string side, int size) {
-	//constructor
-	//this.queue? TODO
 	this->_NAME = name;
 	this->_TYPE = NULL;
 	this->_RAW_VALUES = NULL;
@@ -129,6 +127,7 @@ void Sensor::SETPACKET(int NEWPACK){
 
 //TODO PARSE METHOD
 //TODO  BINBIT METHOD
+// are they the same function??
 
 //converts a given binary to decimal
 //https://www.geeksforgeeks.org/program-binary-decimal-conversion/

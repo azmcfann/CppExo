@@ -17,6 +17,16 @@ Accel::~Accel() {
 	// TODO Auto-generated destructor stub
 }
 
-double SUPOFFSET(){
-	return GETOFFSET();
+double SUPOFFSET() {
+    return Sensor::GETOFFSET();}
+
+double SUPORIENTATION() {
+    return Sensor::GETORIENTATION();}
+
+bool RESET() {
+    return true;}
+
+void SUPSETRAWVALS(int blocks[]) {
+    //TODO after figuring out sensor.cpp parsing
+
 }
