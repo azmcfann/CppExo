@@ -20,12 +20,10 @@ public:
 
     bool RESET();
 
-    void SUPSETRAWVAL();
+    void SUPSETRAWVALS(int[]);
 
 private:
-    int valX[];
-    int valY[];
-    int valZ[];
+    int VALS[][][];
 };
 
 #endif /* ACCEL_H_ */

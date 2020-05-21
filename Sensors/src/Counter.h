@@ -7,7 +7,15 @@
 
 class Counter : public Sensor {
 public:
+	Counter(string, int[], string);
+	virtual ~Counter();
 
+	double SUPGETOFFSET();
+	double SUPGETORIENT();
+
+	bool RESET();
+
+	void SUPSETRAWVAL(int[]);
 
 private:
 

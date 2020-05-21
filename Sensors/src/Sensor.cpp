@@ -7,7 +7,6 @@
 
 #include "Sensor.h"
 #include <string>
-//#include <cstring>
 #include <fstream>
 #include <queue>
 using namespace std;
