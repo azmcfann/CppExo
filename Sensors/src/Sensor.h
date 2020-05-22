@@ -73,9 +73,9 @@ private:
 
 	//plural names i will assume until stated
 	//that it is an array of values
-	int _BYTE_LIST[];
+	int _BYTE_LIST[8];
 	int _RAW_VALUES[];
-	int _FILTRED_VALUES[];
+	//int _FILTRED_VALUES[];
 	//why are there two??
 	int _FILTERED_VALUES[];
 

@@ -125,7 +125,7 @@ void Sensor::SETPACKET(int NEWPACK){
 
 
 //TODO PARSE METHOD
-//TODO  BINBIT METHOD
+//TODO  BINBIT METHOD reverse the binary to decimal function
 // are they the same function??
 
 //converts a given binary to decimal
