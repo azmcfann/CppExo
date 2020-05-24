@@ -1,3 +1,4 @@
+#pragma once
 /*
  * Sensor.h
  *
@@ -36,10 +37,10 @@ public:
 	double GETORIENTATION();
 	void SETORIENTATION(double);
 
-	int GETRAWVALS();
+	int* GETRAWVALS();
 	void SETRAWVALS(int[]);
 
-	int GETFILTEREDVALS();
+	int* GETFILTEREDVALS();
 	void SETFILTEREDVALS(int[]);
 
 	int GETTIME();
@@ -48,9 +49,10 @@ public:
 	bool GETFILTERED();
 	void SETFILTERED(bool);
 
-	int GETVALUES();
+	int* GETVALUES();
 
-	int GETBYTELIST();
+	int* GETBYTELIST();
+	void SETBYTELIST(int[]);
 
 	int GETPACKET();
 	void SETPACKET(int);

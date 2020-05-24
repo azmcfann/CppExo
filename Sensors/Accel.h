@@ -1,3 +1,4 @@
+#pragma once
 /*
  * Accel.h
  *
@@ -10,12 +11,12 @@
 #include <string>
 #include "Sensor.h"
 
-class Accel: public Sensor {
+class Accel : public Sensor {
 public:
-	Accel(string, int[], string);
-	virtual ~Accel();
+    Accel(string, int[], string);
+    virtual ~Accel();
 
-	double SUPOFFSET();
+    double SUPOFFSET();
     double SUPORIENTATION();
 
     bool RESET();

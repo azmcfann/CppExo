@@ -18,30 +18,30 @@
     <ClCompile Include="Sensors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Sensor.cpp">
+    <ClCompile Include="Accel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Temperature.cpp">
+    <ClCompile Include="Counter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Accel.cpp">
+    <ClCompile Include="Sensor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Counter.cpp">
+    <ClCompile Include="Temperature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Sensor.h">
+    <ClInclude Include="Accel.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Temperature.h">
+    <ClInclude Include="Counter.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Accel.h">
+    <ClInclude Include="Sensor.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Counter.h">
+    <ClInclude Include="Temperature.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

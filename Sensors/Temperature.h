@@ -1,4 +1,5 @@
 #pragma once
+#pragma once
 #ifndef TEMPERATURE_H_
 #define TEMPERATURE_H_
 #include <string>
@@ -16,7 +17,7 @@ public:
 
 	void SUPSETRAWVALS(int[]);
 private:
-	
+
 };
 
 #endif /* TEMPERATURE_H_ */

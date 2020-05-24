@@ -147,17 +147,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Accel.cpp" />
-    <ClCompile Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Counter.cpp" />
-    <ClCompile Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Sensor.cpp" />
-    <ClCompile Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Temperature.cpp" />
+    <ClCompile Include="Accel.cpp" />
+    <ClCompile Include="Counter.cpp" />
+    <ClCompile Include="Sensor.cpp" />
     <ClCompile Include="Sensors.cpp" />
+    <ClCompile Include="Temperature.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Accel.h" />
-    <ClInclude Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Counter.h" />
-    <ClInclude Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Sensor.h" />
-    <ClInclude Include="..\..\..\Documents\GitHub\CppExo\Sensors\src\Temperature.h" />
+    <ClInclude Include="Accel.h" />
+    <ClInclude Include="Counter.h" />
+    <ClInclude Include="Sensor.h" />
+    <ClInclude Include="Temperature.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

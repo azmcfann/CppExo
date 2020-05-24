@@ -4,7 +4,7 @@
 using namespace std;
 
 Temperature::Temperature(string NAME, int BYTELIST[], string SIDE) : Sensor(NAME, BYTELIST, SIDE, 1) {
-	
+
 }
 
 Temperature::~Temperature() {

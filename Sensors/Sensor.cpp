@@ -15,20 +15,21 @@ using namespace std;
 //side is a descriptor of the location of the sensor
 
 Sensor::Sensor(string name, int byte_list[], string side, int size) {
+	int empty[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 	this->_NAME = name;
-	this->_TYPE = NULL;
-	this->_RAW_VALUES = NULL;
-	this->_FILTRED_VALUES = 0;
+	this->_TYPE = "Default";
+	this->SETRAWVALS(empty);
+	//this->_FILTRED_VALUES = 0;
 	this->_TIME = 0;
 	this->_OFFSET = 0.00;
 	this->_ORIENTATION = NULL;
 	this->_ERROR = 0;
-	this->_FILTERED_VALUES = NULL;
+	this->SETFILTEREDVALS(empty);
 	this->_FILTERED = false;
-	this->_BYTE_LIST = byte_list;
+	this->SETBYTELIST(byte_list);
 	this->_PACKET = 0;
 	this->_PACKET_ORDER = NULL;
-	this->_ORDER = NULL;
+	this->_ORDER = "Default";
 	this->_SIDE = side;
 }
 
@@ -36,88 +37,98 @@ Sensor::~Sensor() {
 	// TODO Auto-generated destructor stub
 }
 
-string Sensor::GETNAME(){
+string Sensor::GETNAME() {
 	return this->_NAME;
 }
-void Sensor::SETNAME(string NEWNAME){
+void Sensor::SETNAME(string NEWNAME) {
 	this->_NAME = NEWNAME;
 }
 
-string Sensor::GETSIDE(){
+string Sensor::GETSIDE() {
 	return this->_SIDE;
 }
-void Sensor::SETSIDE(string NEWSIDE){
+void Sensor::SETSIDE(string NEWSIDE) {
 	this->_SIDE = NEWSIDE;
 }
 
-string Sensor::GETTYPE(){
+string Sensor::GETTYPE() {
 	return this->_TYPE;
 }
-void Sensor::SETTYPE(string NEWTYPE){
+void Sensor::SETTYPE(string NEWTYPE) {
 	this->_TYPE = NEWTYPE;
 }
 
-double Sensor::GETOFFSET(){
+double Sensor::GETOFFSET() {
 	return this->_OFFSET;
 }
-void Sensor::SETOFFSET(double NEWOFFSET){
+void Sensor::SETOFFSET(double NEWOFFSET) {
 	this->_OFFSET = NEWOFFSET;
 }
 
-double Sensor::GETORIENTATION(){
+double Sensor::GETORIENTATION() {
 	return this->_ORIENTATION;
 }
-void Sensor::SETORIENTATION(double NEWORIENT){
+void Sensor::SETORIENTATION(double NEWORIENT) {
 	this->_ORIENTATION = NEWORIENT;
 }
 
-int Sensor::GETRAWVALS(){
+int* Sensor::GETRAWVALS() {
 	return this->_RAW_VALUES;
 }
-void Sensor::SETRAWVALS(int NEWVALS[]){
-	this->_RAW_VALUES = NEWVALS;
+void Sensor::SETRAWVALS(int NEWVALS[]) {
+	for (int x = 0; x < sizeof(NEWVALS); x++) {
+		this->_RAW_VALUES[x] = NEWVALS[x];
+	}
 }
 
-int Sensor::GETFILTEREDVALS(){
+int* Sensor::GETFILTEREDVALS() {
 	return this->_FILTERED_VALUES;
 }
-void Sensor::SETFILTEREDVALS(int NEWVALS[]){
-	this->_FILTERED_VALUES = NEWVALS;
+void Sensor::SETFILTEREDVALS(int NEWVALS[]) {
+	for (int x = 0; x < sizeof(NEWVALS); x++) {
+		this->_FILTERED_VALUES[x] = NEWVALS[x];
+	}
+
 }
 
-int Sensor::GETTIME(){
+int Sensor::GETTIME() {
 	return this->_TIME;
 }
-void Sensor::SETTIME(int NEWTIME){
+void Sensor::SETTIME(int NEWTIME) {
 	this->_TIME = NEWTIME;
 }
 
-bool Sensor::GETFILTERED(){
+bool Sensor::GETFILTERED() {
 	return this->_FILTERED;
 }
-void Sensor::SETFILTERED(bool NEWFILT){
+void Sensor::SETFILTERED(bool NEWFILT) {
 	this->_FILTERED = NEWFILT;
 }
 
-int Sensor::GETVALUES(){
+int* Sensor::GETVALUES() {
 	//returns raw values if it has not been filtered
 	// if it was filtered, return the filtered values
-	if(GETFILTERED()){
+	if (GETFILTERED()) {
 		return this->_FILTERED_VALUES;
 	}
-	else{
+	else {
 		return this->_RAW_VALUES;
 	}
 }
 
-int Sensor::GETBYTELIST(){
+int* Sensor::GETBYTELIST() {
 	return this->_BYTE_LIST;
 }
+void Sensor::SETBYTELIST(int NEWVALS[]) {
+	for (int x = 0; x < sizeof(NEWVALS); x++) {
+		this->_BYTE_LIST[x] = NEWVALS[x];
+	}
+}
 
-int Sensor::GETPACKET(){
+int Sensor::GETPACKET() {
 	return this->QUEUE.front();
 }
-void Sensor::SETPACKET(int NEWPACK){
+void Sensor::SETPACKET(int NEWPACK) {
 	int CONVERT = this->BINTODEC(NEWPACK);
 	this->_PACKET = CONVERT;
 	this->SETRAWVALS(&CONVERT);
@@ -130,17 +141,17 @@ void Sensor::SETPACKET(int NEWPACK){
 
 //converts a given binary to decimal
 //https://www.geeksforgeeks.org/program-binary-decimal-conversion/
-int Sensor::BINTODEC(int INPUT){
+int Sensor::BINTODEC(int INPUT) {
 	int NUMBER = INPUT;
 	int DECIMAL = 0;
 	int BASE = 1;
 	int TEMP = NUMBER;
 
-	while(TEMP > 0){
+	while (TEMP > 0) {
 		int LASTDIG = TEMP % 10;
-		TEMP = TEMP /10;
+		TEMP = TEMP / 10;
 		DECIMAL += (LASTDIG * BASE);
-		BASE = BASE*2;
+		BASE = BASE * 2;
 	}
 	return DECIMAL;
 }

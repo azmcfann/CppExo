@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Counter::Counter(string NAME, int BYTELIST[], string SIDE) : Sensor(NAME, BYTELIST[], SIDE, 1) {
+Counter::Counter(string NAME, int BYTELIST[], string SIDE) : Sensor(NAME, BYTELIST, SIDE, 1) {
 	Sensor::SETTYPE("Counter");
 }
 Counter::~Counter() {
