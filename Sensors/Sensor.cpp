@@ -128,30 +128,37 @@ void Sensor::SETBYTELIST(int NEWVALS[]) {
 int Sensor::GETPACKET() {
 	return this->QUEUE.front();
 }
-void Sensor::SETPACKET(int NEWPACK) {
+void Sensor::SETPACKET(int NEWPACK[]) {
 	int CONVERT = this->BINTODEC(NEWPACK);
 	this->_PACKET = CONVERT;
 	this->SETRAWVALS(&CONVERT);
 }
 
 
-//TODO PARSE METHOD
-//TODO  BINBIT METHOD reverse the binary to decimal function
-// are they the same function??
-
-//converts a given binary to decimal
-//https://www.geeksforgeeks.org/program-binary-decimal-conversion/
-int Sensor::BINTODEC(int INPUT) {
-	int NUMBER = INPUT;
-	int DECIMAL = 0;
-	int BASE = 1;
-	int TEMP = NUMBER;
-
-	while (TEMP > 0) {
-		int LASTDIG = TEMP % 10;
-		TEMP = TEMP / 10;
-		DECIMAL += (LASTDIG * BASE);
-		BASE = BASE * 2;
+//converts an int into an array of binary bits
+int* Sensor::DECTOBIN(int DECIMAL) {
+	int BINARY[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+	int INDEX = 7;
+	while (INDEX >= 0) {
+		BINARY[INDEX] = DECIMAL % 2;
+		if ((DECIMAL % 2) > 0) {
+			DECIMAL = DECIMAL - 1;
+		}
+		else {}
+		DECIMAL = DECIMAL / 2;
+		INDEX--;
 	}
-	return DECIMAL;
+	return BINARY;
+}
+
+//converts an array of binary bits to an int
+int Sensor::BINTODEC(int INPUT[]) {
+	int NUMBER = 0;
+	int INDEX = 0;
+	while (INDEX < sizeof(INPUT)) {
+		NUMBER = NUMBER * 2;
+		NUMBER = NUMBER + INPUT[INDEX];
+		INDEX++;
+	}
+	return NUMBER;
 }

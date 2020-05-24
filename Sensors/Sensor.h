@@ -55,9 +55,10 @@ public:
 	void SETBYTELIST(int[]);
 
 	int GETPACKET();
-	void SETPACKET(int);
+	void SETPACKET(int[]);
 
-	int BINTODEC(int);
+	int BINTODEC(int[]);
+	int* DECTOBIN(int);
 
 	//sticking things in private for security
 	//until told otherwise
