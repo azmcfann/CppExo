@@ -9,7 +9,7 @@
 using namespace std;
 
 Accel::Accel(string name, int byte_list[], string side) : Sensor(name, byte_list, side, 1) {
-
+    Sensor::SETTYPE("Accel");
 
 }
 
@@ -30,6 +30,5 @@ bool Accel::RESET() {
 }
 
 void Accel::SUPSETRAWVALS(int blocks[]) {
-    //TODO after figuring out sensor.cpp parsing
-
+    Sensor::SETRAWVALS(blocks);
 }

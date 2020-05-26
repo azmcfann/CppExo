@@ -78,8 +78,6 @@ private:
 	//that it is an array of values
 	int _BYTE_LIST[8];
 	int _RAW_VALUES[8];
-	//int _FILTRED_VALUES[];
-	//why are there two??
 	int _FILTERED_VALUES[8];
 
 	queue <int> QUEUE;

@@ -4,7 +4,7 @@
 using namespace std;
 
 Temperature::Temperature(string NAME, int BYTELIST[], string SIDE) : Sensor(NAME, BYTELIST, SIDE, 1) {
-
+	Sensor::SETTYPE("Temperature");
 }
 
 Temperature::~Temperature() {
@@ -24,6 +24,5 @@ bool Temperature::RESET() {
 }
 
 void Temperature::SUPSETRAWVALS(int blocks[]) {
-	//TODO implements the parse method, how does it work?
+	Sensor::SETRAWVALS(blocks);
 }
-//TODO parse method. empty method, assuming it passes to the sensor parser

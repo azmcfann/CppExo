@@ -76,8 +76,16 @@ int* Sensor::GETRAWVALS() {
 	return this->_RAW_VALUES;
 }
 void Sensor::SETRAWVALS(int NEWVALS[]) {
-	for (int x = 0; x < sizeof(NEWVALS); x++) {
-		this->_RAW_VALUES[x] = NEWVALS[x];
+	if (sizeof(NEWVALS) == 1) {
+		for (int z = 0; z < 8; z++) {
+			this->_RAW_VALUES[z] = NULL;
+		}
+		this->_RAW_VALUES[0] = NEWVALS[0];
+	}
+	else {
+		for (int x = 0; x < sizeof(NEWVALS); x++) {
+			this->_RAW_VALUES[x] = NEWVALS[x];
+		}
 	}
 }
 

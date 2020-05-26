@@ -30,6 +30,12 @@
     <ClCompile Include="Temperature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FSR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gyro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Accel.h">
@@ -42,6 +48,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Temperature.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FSR.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gyro.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

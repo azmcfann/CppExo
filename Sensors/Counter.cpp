@@ -24,6 +24,6 @@ bool Counter::RESET() {
 }
 
 void Counter::SUPSETRAWVAL(int blocks[]) {
-	//TODO implements the parse method, how does it work?
+	Sensor::SETRAWVALS(blocks);
 }
 //TODO parse method. empty method, assuming it passes to the sensor parser
