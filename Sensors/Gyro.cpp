@@ -1,3 +1,8 @@
+/*
+
+
+*/
+
 #include <string>
 #include "Gyro.h"
 using namespace std;
@@ -24,5 +29,7 @@ bool Gyro::RESET() {
 }
 
 void Gyro::SUPSETRAWVALS(int blocks[]) {
+   //TODO how would this work with a 3d array? 
+    
     Sensor::SETRAWVALS(blocks);
 }

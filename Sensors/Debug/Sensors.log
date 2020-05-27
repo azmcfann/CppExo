@@ -1,32 +1,4 @@
-﻿  Accel.cpp
-  Counter.cpp
-  FSR.cpp
-  Gyro.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.h(10,32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.h(10,32): warning C4183: 'Gyro': missing return type; assumed to be a member function returning 'int'
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.h(11,18): error C2523: 'FSR::~Gyro': destructor tag mismatch
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(5,11): error C2653: 'Gyro': is not a class or namespace name
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(5,55): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(5,90): error C2550: 'Gyro': constructor initializer lists are only allowed on constructor definitions
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(6,13): error C2352: 'Sensor::SETTYPE': illegal call of non-static member function
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Sensor.h(32): message : see declaration of 'Sensor::SETTYPE'
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(8,1): warning C4508: 'Gyro': function should return a value; 'void' return type assumed
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(10,12): error C2653: 'Gyro': is not a class or namespace name
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(10,12): error C2523: '<Unknown>::~Gyro': destructor tag mismatch
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(10,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(12,1): warning C4508: 'Gyro': function should return a value; 'void' return type assumed
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(14,23): error C2653: 'Gyro': is not a class or namespace name
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(15,20): error C2352: 'Sensor::GETOFFSET': illegal call of non-static member function
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Sensor.h(34): message : see declaration of 'Sensor::GETOFFSET'
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(18,28): error C2653: 'Gyro': is not a class or namespace name
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(19,20): error C2352: 'Sensor::GETORIENTATION': illegal call of non-static member function
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Sensor.h(37): message : see declaration of 'Sensor::GETORIENTATION'
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(22,17): error C2653: 'Gyro': is not a class or namespace name
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(26,25): error C2653: 'Gyro': is not a class or namespace name
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Gyro.cpp(27,13): error C2352: 'Sensor::SETRAWVALS': illegal call of non-static member function
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Sensor.h(41): message : see declaration of 'Sensor::SETRAWVALS'
-  Sensor.cpp
-  Sensors.cpp
+﻿  Gyro.cpp
   Temperature.cpp
   Generating Code...
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Sensor.cpp(159): warning C4172: returning address of local variable or temporary: BINARY
+  Sensors.vcxproj -> C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Debug\Sensors.exe

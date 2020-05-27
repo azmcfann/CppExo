@@ -1,11 +1,11 @@
 #pragma once
 
-#ifndef Gyro_H_
-#define Gyro_H_
+#ifndef GYRO_H_
+#define GYRO_H_
 #include <string>
 #include "Sensor.h"
 
-class FSR : public Sensor {
+class Gyro : public Sensor {
 public:
     Gyro(string, int[], string);
     virtual ~Gyro();
@@ -21,4 +21,4 @@ private:
     //int VALS[][][];
 };
 
-#endif /* Gyro_H_ */
+#endif /* GYRO_H_ */

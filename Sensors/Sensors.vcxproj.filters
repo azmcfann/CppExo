@@ -36,6 +36,12 @@
     <ClCompile Include="Gyro.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IMU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Accel.h">
@@ -54,6 +60,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Gyro.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMU.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mag.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
