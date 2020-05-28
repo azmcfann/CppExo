@@ -1,4 +1,12 @@
-﻿  Gyro.cpp
+﻿  Accel.cpp
+  Counter.cpp
+  FSR.cpp
+  Gyro.cpp
+  IMU.cpp
+  Mag.cpp
+  Sensor.cpp
+  Sensors.cpp
   Temperature.cpp
   Generating Code...
+C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Sensor.cpp(159): warning C4172: returning address of local variable or temporary: BINARY
   Sensors.vcxproj -> C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Debug\Sensors.exe
