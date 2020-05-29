@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensors", "Sensors.vcxproj"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Managers", "..\Managers\Managers.vcxproj", "{EFC58858-D718-4C81-B6AB-7E87E032AE84}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Observers", "..\Observers\Observers.vcxproj", "{19EB2935-CDB3-4072-B2D8-AFA5A8849643}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{EFC58858-D718-4C81-B6AB-7E87E032AE84}.Release|x64.Build.0 = Release|x64
 		{EFC58858-D718-4C81-B6AB-7E87E032AE84}.Release|x86.ActiveCfg = Release|Win32
 		{EFC58858-D718-4C81-B6AB-7E87E032AE84}.Release|x86.Build.0 = Release|Win32
+		{19EB2935-CDB3-4072-B2D8-AFA5A8849643}.Debug|x64.ActiveCfg = Debug|x64
+		{19EB2935-CDB3-4072-B2D8-AFA5A8849643}.Debug|x64.Build.0 = Debug|x64
+		{19EB2935-CDB3-4072-B2D8-AFA5A8849643}.Debug|x86.ActiveCfg = Debug|Win32
+		{19EB2935-CDB3-4072-B2D8-AFA5A8849643}.Debug|x86.Build.0 = Debug|Win32
+		{19EB2935-CDB3-4072-B2D8-AFA5A8849643}.Release|x64.ActiveCfg = Release|x64
+		{19EB2935-CDB3-4072-B2D8-AFA5A8849643}.Release|x64.Build.0 = Release|x64
+		{19EB2935-CDB3-4072-B2D8-AFA5A8849643}.Release|x86.ActiveCfg = Release|Win32
+		{19EB2935-CDB3-4072-B2D8-AFA5A8849643}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

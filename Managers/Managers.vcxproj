@@ -71,7 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Owner\Documents\GitHub\CppExo\Sensors;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Owner\Documents\GitHub\CppExo\Sensors;C:\Users\Owner\Documents\GitHub\CppExo\Observers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -139,10 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FilterManager.cpp" />
     <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="Publisher.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FilterManager.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="Publisher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

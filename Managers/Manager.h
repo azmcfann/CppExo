@@ -2,7 +2,7 @@
 
 #ifndef MANAGER_H_
 #define MANAGER_H_
-
+#include "Publisher.h"
 class Manager {
 public:
 	Manager();
@@ -12,12 +12,12 @@ public:
 
 	bool UPDATE();
 
+	Publisher GETPUBLISHER();
+
 	//Subscriber GENERATESUB();
 
 private:
-	//TODO construct the publisher
-	//  and subscriber classes and
-	//  their folder
+	Publisher PUBLISHER;
 
 };
 

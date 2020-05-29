@@ -2,12 +2,20 @@
 #include <string>
 using namespace std;
 
-Manager::Manager() {
+//TODO figure out a way to call manager
+//   functions from publisher and subscriber
+//   without creating an infinite include loop
 
+Manager::Manager() {
+	PUBLISHER = Publisher::Publisher();
 }
 
 Manager::~Manager() {
 
+}
+
+Publisher Manager::GETPUBLISHER() {
+	return PUBLISHER;
 }
 
 void Manager::REGISTERSUB() {
