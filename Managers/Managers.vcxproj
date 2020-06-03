@@ -139,14 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CommunicationManager.cpp" />
     <ClCompile Include="FilterManager.cpp" />
     <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="PlotManager.cpp" />
     <ClCompile Include="Publisher.cpp" />
+    <ClCompile Include="RecorderManager.cpp" />
+    <ClCompile Include="SensorManager.cpp" />
+    <ClCompile Include="SerialManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FilterManager.h" />
+    <ClInclude Include="CommunicationManager.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="PlotManager.h" />
     <ClInclude Include="Publisher.h" />
+    <ClInclude Include="RecorderManager.h" />
+    <ClInclude Include="SensorManager.h" />
+    <ClInclude Include="SerialManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
