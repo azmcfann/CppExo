@@ -1,3 +1,17 @@
-//TODO 
-//  this class contains complicated things, i will
-///  have to learn more about the python variant first
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
+#include "IMU.H"
+#include <string>
+using namespace std;
+
+IMU::IMU() {
+
+}
+
+IMU::~IMU() {
+
+}

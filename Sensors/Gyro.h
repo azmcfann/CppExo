@@ -1,4 +1,10 @@
 #pragma once
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 
 #ifndef GYRO_H_
 #define GYRO_H_
@@ -10,15 +16,11 @@ public:
     Gyro(string, int[], string);
     virtual ~Gyro();
 
-    double SUPOFFSET();
-    double SUPORIENTATION();
-    
     bool RESET();
-
-    void SUPSETRAWVALS(int[]);
-
+    
+    void GYROSETRAWVALS(int[]);
 private:
-    //int VALS[][][];
+    int VALUES[1];
 };
 
 #endif /* GYRO_H_ */

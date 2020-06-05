@@ -1,7 +1,9 @@
-/*
-
-
-*/
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 
 #include <string>
 #include "Gyro.h"
@@ -9,27 +11,18 @@ using namespace std;
 
 Gyro::Gyro(string name, int byte_list[], string side) : Sensor(name, byte_list, side, 1) {
     Sensor::SETTYPE("Gyro");
-
+    VALUES[0] = 0;
 }
 
 Gyro::~Gyro() {
-    // TODO Auto-generated destructor stub
-}
-
-double Gyro::SUPOFFSET() {
-    return Sensor::GETOFFSET();
-}
-
-double Gyro::SUPORIENTATION() {
-    return Sensor::GETORIENTATION();
 }
 
 bool Gyro::RESET() {
     return true;
 }
 
-void Gyro::SUPSETRAWVALS(int blocks[]) {
-   //TODO how would this work with a 3d array? 
-    
-    Sensor::SETRAWVALS(blocks);
+void Gyro::GYROSETRAWVALS(int BYTES[]) {
+    int DECIMAL = Sensor::BINTODEC(BYTES);
+    VALUES[0] = DECIMAL;
+    Sensor::SETRAWVALS(VALUES);
 }

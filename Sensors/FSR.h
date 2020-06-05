@@ -1,4 +1,10 @@
 #pragma once
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 
 #ifndef FSR_H_
 #define FSR_H_
@@ -10,15 +16,12 @@ public:
     FSR(string, int[], string);
     virtual ~FSR();
 
-    double SUPOFFSET();
-    double SUPORIENTATION();
-
     bool RESET();
 
-    void SUPSETRAWVALS(int[]);
+    void FSRSETRAWVALS(int[]);
 
 private:
-    //int VALS[][][];
+    int VALUES[1];
 };
 
 #endif /* FSR_H_ */

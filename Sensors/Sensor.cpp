@@ -1,9 +1,9 @@
-/*
- * Sensor.cpp
- *
- *  Created on: May 16, 2020
- *      Author: Owner
- */
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 
 #include "Sensor.h"
 #include <string>

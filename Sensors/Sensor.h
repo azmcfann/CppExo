@@ -1,10 +1,10 @@
 #pragma once
-/*
- * Sensor.h
- *
- *  Created on: May 16, 2020
- *      Author: Owner
- */
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 
 #ifndef SENSOR_H_
 #define SENSOR_H_

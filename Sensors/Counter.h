@@ -1,4 +1,10 @@
 #pragma once
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 
 #ifndef COUNTER_H_
 #define COUNTER_H_
@@ -10,15 +16,12 @@ public:
 	Counter(string, int[], string);
 	virtual ~Counter();
 
-	double SUPGETOFFSET();
-	double SUPGETORIENT();
-
 	bool RESET();
-
-	void SUPSETRAWVAL(int[]);
+	
+	void COUNTSETRAWVALS(int[]);
 
 private:
-
+	int VALUES[1];
 };
 
 #endif /* COUNTER_H_ */

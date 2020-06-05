@@ -1,10 +1,10 @@
 #pragma once
-/*
- * Accel.h
- *
- *  Created on: May 19, 2020
- *      Author: Owner
- */
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 
 #ifndef ACCEL_H_
 #define ACCEL_H_
@@ -16,15 +16,12 @@ public:
     Accel(string, int[], string);
     virtual ~Accel();
 
-    double SUPOFFSET();
-    double SUPORIENTATION();
-
     bool RESET();
 
-    void SUPSETRAWVALS(int[]);
+    void ACCELSETRAWVALS(int[]);
 
 private:
-    //int VALS[][][];
+    int VALUES[1];
 };
 
 #endif /* ACCEL_H_ */
