@@ -138,9 +138,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Managers\Publisher.cpp" />
     <ClCompile Include="Subscriber.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Managers\Publisher.h" />
     <ClInclude Include="Subscriber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

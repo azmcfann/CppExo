@@ -14,6 +14,8 @@
 class Accel : public Sensor {
 public:
     Accel(string, int[], string);
+    Accel() = default;
+
     virtual ~Accel();
 
     bool RESET();

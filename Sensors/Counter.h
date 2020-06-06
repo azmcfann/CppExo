@@ -14,6 +14,7 @@
 class Counter : public Sensor {
 public:
 	Counter(string, int[], string);
+	Counter() = default;
 	virtual ~Counter();
 
 	bool RESET();

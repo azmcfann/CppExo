@@ -14,6 +14,8 @@
 class Gyro : public Sensor {
 public:
     Gyro(string, int[], string);
+    Gyro() = default;
+    
     virtual ~Gyro();
 
     bool RESET();

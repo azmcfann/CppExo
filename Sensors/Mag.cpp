@@ -11,18 +11,6 @@ Mag::~Mag() {
     // TODO Auto-generated destructor stub
 }
 
-double Mag::SUPOFFSET() {
-    return Sensor::GETOFFSET();
-}
-
-double Mag::SUPORIENTATION() {
-    return Sensor::GETORIENTATION();
-}
-
 bool Mag::RESET() {
     return true;
-}
-
-void Mag::SUPSETRAWVALS(int blocks[]) {
-    Sensor::SETRAWVALS(blocks);
 }

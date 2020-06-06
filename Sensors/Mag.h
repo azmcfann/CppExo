@@ -8,14 +8,10 @@
 class Mag : public Sensor {
 public:
     Mag(string, int[], string);
+    Mag() = default;
+    
     virtual ~Mag();
-
-    double SUPOFFSET();
-    double SUPORIENTATION();
-
     bool RESET();
-
-    void SUPSETRAWVALS(int[]);
 
 private:
     //int VALS[][][];

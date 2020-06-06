@@ -20,6 +20,8 @@ public:
 	//side is a descriptor of the location of the sensor
 
 	Sensor(string, int[], string, int);
+	Sensor() = default;
+	
 	virtual ~Sensor();
 
 	string GETNAME();

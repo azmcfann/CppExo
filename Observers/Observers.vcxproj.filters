@@ -18,9 +18,15 @@
     <ClCompile Include="Subscriber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Managers\Publisher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Subscriber.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Managers\Publisher.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

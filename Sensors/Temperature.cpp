@@ -11,18 +11,6 @@ Temperature::~Temperature() {
 
 }
 
-double Temperature::SUPGETOFFSET() {
-	return Sensor::GETOFFSET();
-}
-
-double Temperature::SUPGETORIENT() {
-	return Sensor::GETORIENTATION();
-}
-
 bool Temperature::RESET() {
 	return true;
-}
-
-void Temperature::SUPSETRAWVALS(int blocks[]) {
-	Sensor::SETRAWVALS(blocks);
 }

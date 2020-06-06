@@ -8,14 +8,12 @@
 class Temperature : public Sensor {
 public:
 	Temperature(string, int[], string);
+	Temperature() = default;
+	
 	virtual ~Temperature();
-
-	double SUPGETOFFSET();
-	double SUPGETORIENT();
 
 	bool RESET();
 
-	void SUPSETRAWVALS(int[]);
 private:
 
 };

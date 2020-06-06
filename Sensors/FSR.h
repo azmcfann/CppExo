@@ -14,6 +14,8 @@
 class FSR : public Sensor {
 public:
     FSR(string, int[], string);
+    FSR() = default;
+    
     virtual ~FSR();
 
     bool RESET();

@@ -19,7 +19,7 @@ using namespace std;
 
 class IMU {
 public:
-	IMU();
+	IMU(string, Accel, Gyro, Temperature, Counter);
 	virtual ~IMU();
 private:
 	string NAME;
@@ -28,7 +28,10 @@ private:
 	Temperature TEMP;
 	Counter COUNTER;
 
-	
+	double ORIENTATION[3];
+	double ANGULARVELOCITY[3];
+	double GYROANGLE[3];
+
 };
 
 #endif IMU_H_
