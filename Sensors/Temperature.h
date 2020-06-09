@@ -1,5 +1,11 @@
 #pragma once
-#pragma once
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
+
 #ifndef TEMPERATURE_H_
 #define TEMPERATURE_H_
 #include <string>

@@ -139,11 +139,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Managers\Publisher.cpp" />
+    <ClCompile Include="Observers.cpp" />
     <ClCompile Include="Subscriber.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Managers\Publisher.h" />
     <ClInclude Include="Subscriber.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Communication\Communication.vcxproj">
+      <Project>{f6397826-d02a-4960-b508-edf50843f5c2}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

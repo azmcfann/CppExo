@@ -1,5 +1,2 @@
-﻿FilterManager.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall Sensor::~Sensor(void)" (??1Sensor@@UAE@XZ) referenced in function "public: virtual __thiscall FilterManager::~FilterManager(void)" (??1FilterManager@@UAE@XZ)
-Manager.obj : error LNK2019: unresolved external symbol "public: __thiscall Publisher::Publisher(void)" (??0Publisher@@QAE@XZ) referenced in function "public: __thiscall Manager::Manager(void)" (??0Manager@@QAE@XZ)
-Manager.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall Publisher::~Publisher(void)" (??1Publisher@@UAE@XZ) referenced in function "public: __thiscall Manager::Manager(void)" (??0Manager@@QAE@XZ)
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Debug\Managers.exe : fatal error LNK1120: 4 unresolved externals
+﻿  CommunicationManager.cpp
+  Managers.vcxproj -> C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Debug\Managers.exe

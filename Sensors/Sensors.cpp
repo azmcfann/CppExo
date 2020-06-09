@@ -1,6 +1,10 @@
-// Sensors.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-//#include <iostream>
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
+
 using namespace std;
 #include "Sensor.h"
 #include "Accel.h"

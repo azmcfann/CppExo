@@ -167,6 +167,17 @@
     <ClInclude Include="Sensor.h" />
     <ClInclude Include="Temperature.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Communication\Communication.vcxproj">
+      <Project>{f6397826-d02a-4960-b508-edf50843f5c2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Managers\Managers.vcxproj">
+      <Project>{efc58858-d718-4c81-b6ab-7e87e032ae84}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Observers\Observers.vcxproj">
+      <Project>{19eb2935-cdb3-4072-b2d8-afa5a8849643}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

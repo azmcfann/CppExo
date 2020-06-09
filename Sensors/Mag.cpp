@@ -1,3 +1,10 @@
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
+
 #include <string>
 #include "Mag.h"
 using namespace std;

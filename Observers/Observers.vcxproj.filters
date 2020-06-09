@@ -21,6 +21,9 @@
     <ClCompile Include="..\Managers\Publisher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Observers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Subscriber.h">

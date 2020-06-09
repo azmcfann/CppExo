@@ -1,8 +1,14 @@
 #pragma once
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 
 #ifndef MANAGER_H_
 #define MANAGER_H_
-#include "Publisher.h"
+
 class Manager {
 public:
 	Manager();
@@ -12,12 +18,12 @@ public:
 
 	bool UPDATE();
 
-	Publisher GETPUBLISHER();
+	//Publisher GETPUBLISHER();
 
 	//Subscriber GENERATESUB();
 
 private:
-	Publisher PUBLISHER;
+	//Publisher PUBLISHER;
 
 };
 

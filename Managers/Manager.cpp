@@ -1,3 +1,9 @@
+// Authors:
+//      Original python code created by
+//      Nathaniel Goldfarb
+//      
+//      C++ code adapted from the python code by
+//      Alexandra McFann
 #include "Manager.h"
 #include <string>
 using namespace std;
@@ -7,17 +13,17 @@ using namespace std;
 //   without creating an infinite include loop
 
 Manager::Manager() {
-	PUBLISHER = Publisher::Publisher();
+	//PUBLISHER = Publisher::Publisher("Help");
 }
 
 Manager::~Manager() {
 
 }
-
+/*
 Publisher Manager::GETPUBLISHER() {
 	return PUBLISHER;
 }
-
+*/
 void Manager::REGISTERSUB() {
 	//TODO learn more about the publisher and subscriber classes
 	//  and construct their folder
