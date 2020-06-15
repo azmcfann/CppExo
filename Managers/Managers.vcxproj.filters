@@ -41,26 +41,26 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Manager.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="CommunicationManager.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FilterManager.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CommunicationManager.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Manager.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PlotManager.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RecorderManager.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SensorManager.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SerialManager.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

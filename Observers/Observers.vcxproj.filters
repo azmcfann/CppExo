@@ -26,11 +26,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Subscriber.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\Managers\Publisher.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Subscriber.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
