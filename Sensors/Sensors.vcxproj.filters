@@ -13,60 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Src">
+      <UniqueIdentifier>{853751bc-9000-4599-a92a-e0f90bc688fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Headers">
+      <UniqueIdentifier>{66f770e9-9fdc-46ce-8ad6-ca4279df0552}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Temperature.cpp">
+      <Filter>Source Files\Src</Filter>
+    </ClCompile>
     <ClCompile Include="Sensors.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Accel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Counter.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Src</Filter>
     </ClCompile>
     <ClCompile Include="Sensor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Temperature.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FSR.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Gyro.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IMU.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Src</Filter>
     </ClCompile>
     <ClCompile Include="Mag.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="IMU.cpp">
+      <Filter>Source Files\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gyro.cpp">
+      <Filter>Source Files\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FSR.cpp">
+      <Filter>Source Files\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Counter.cpp">
+      <Filter>Source Files\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Accel.cpp">
+      <Filter>Source Files\Src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Accel.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Counter.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="Sensor.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Temperature.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FSR.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Gyro.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IMU.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Mag.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Temperature.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="IMU.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Gyro.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FSR.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Counter.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Accel.h">
+      <Filter>Source Files\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

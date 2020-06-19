@@ -13,24 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Src">
+      <UniqueIdentifier>{18fbb79a-50be-4dbc-aeec-0eab8bba2bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Headers">
+      <UniqueIdentifier>{fe691fb6-815b-442b-8b58-78d228fcc27a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Subscriber.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Observers.cpp">
+      <Filter>Source Files\Src</Filter>
     </ClCompile>
     <ClCompile Include="..\Managers\Publisher.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Src</Filter>
     </ClCompile>
-    <ClCompile Include="Observers.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Subscriber.cpp">
+      <Filter>Source Files\Src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Subscriber.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\Managers\Publisher.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Subscriber.h">
+      <Filter>Source Files\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
