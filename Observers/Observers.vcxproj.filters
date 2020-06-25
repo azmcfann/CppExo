@@ -21,22 +21,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Observers.cpp">
-      <Filter>Source Files\Src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Managers\Publisher.cpp">
-      <Filter>Source Files\Src</Filter>
-    </ClCompile>
-    <ClCompile Include="Subscriber.cpp">
-      <Filter>Source Files\Src</Filter>
-    </ClCompile>
+    <ClInclude Include="Headers\Subscriber.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Managers\Publisher.h">
-      <Filter>Source Files\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Subscriber.h">
-      <Filter>Source Files\Headers</Filter>
-    </ClInclude>
+    <ClCompile Include="Src\Observers.cpp">
+      <Filter>Source Files\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Subscriber.cpp">
+      <Filter>Source Files\Src</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

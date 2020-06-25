@@ -4,7 +4,7 @@
 //      
 //      C++ code adapted from the python code by
 //      Alexandra McFann
-#include "Subscriber.h"
+#include <Subscriber.h>
 #include <string>
 using namespace std;
 

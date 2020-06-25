@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Managers\\Headers",
+    "\\Managers\\Src",
+    "\\Observers",
+    "\\Observers\\Headers",
+    "\\Observers\\Src",
+    "\\Sensors\\Headers",
+    "\\Sensors\\Src"
+  ],
+  "SelectedNode": "\\Observers",
+  "PreviewInSolutionExplorer": false
+}

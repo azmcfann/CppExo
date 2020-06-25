@@ -140,31 +140,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CommunicationManager.cpp" />
-    <ClCompile Include="FilterManager.cpp" />
-    <ClCompile Include="Manager.cpp" />
-    <ClCompile Include="Managers.cpp" />
-    <ClCompile Include="PlotManager.cpp" />
-    <ClCompile Include="RecorderManager.cpp" />
-    <ClCompile Include="SensorManager.cpp" />
-    <ClCompile Include="SerialManager.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="FilterManager.h" />
-    <ClInclude Include="CommunicationManager.h" />
-    <ClInclude Include="Manager.h" />
-    <ClInclude Include="PlotManager.h" />
-    <ClInclude Include="RecorderManager.h" />
-    <ClInclude Include="SensorManager.h" />
-    <ClInclude Include="SerialManager.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Communication\Communication.vcxproj">
       <Project>{f6397826-d02a-4960-b508-edf50843f5c2}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Observers\Observers.vcxproj">
       <Project>{19eb2935-cdb3-4072-b2d8-afa5a8849643}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Headers\SensorManager.cpp" />
+    <ClCompile Include="Src\CommunicationManager.cpp" />
+    <ClCompile Include="Src\FilterManager.cpp" />
+    <ClCompile Include="Src\Manager.cpp" />
+    <ClCompile Include="Src\Managers.cpp" />
+    <ClCompile Include="Src\PlotManager.cpp" />
+    <ClCompile Include="Src\Publisher.cpp" />
+    <ClCompile Include="Src\RecorderManager.cpp" />
+    <ClCompile Include="Src\SerialManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\CommunicationManager.h" />
+    <ClInclude Include="Headers\FilterManager.h" />
+    <ClInclude Include="Headers\Manager.h" />
+    <ClInclude Include="Headers\PlotManager.h" />
+    <ClInclude Include="Headers\Publisher.h" />
+    <ClInclude Include="Headers\RecorderManager.h" />
+    <ClInclude Include="Headers\SensorManager.h" />
+    <ClInclude Include="Headers\SerialManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

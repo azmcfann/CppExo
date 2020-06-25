@@ -7,6 +7,8 @@
 //      Alexandra McFann
 #ifndef SUBSCRIBER_H_
 #define SUBSCRIBER_H_
+class Manager;
+#include "Manager.h"
 
 class Subscriber {
 

@@ -147,27 +147,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Accel.cpp" />
-    <ClCompile Include="Counter.cpp" />
-    <ClCompile Include="FSR.cpp" />
-    <ClCompile Include="Gyro.cpp" />
-    <ClCompile Include="IMU.cpp" />
-    <ClCompile Include="Mag.cpp" />
-    <ClCompile Include="Sensor.cpp" />
-    <ClCompile Include="Sensors.cpp" />
-    <ClCompile Include="Temperature.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Accel.h" />
-    <ClInclude Include="Counter.h" />
-    <ClInclude Include="FSR.h" />
-    <ClInclude Include="Gyro.h" />
-    <ClInclude Include="IMU.h" />
-    <ClInclude Include="Mag.h" />
-    <ClInclude Include="Sensor.h" />
-    <ClInclude Include="Temperature.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Communication\Communication.vcxproj">
       <Project>{f6397826-d02a-4960-b508-edf50843f5c2}</Project>
     </ProjectReference>
@@ -177,6 +156,27 @@
     <ProjectReference Include="..\Observers\Observers.vcxproj">
       <Project>{19eb2935-cdb3-4072-b2d8-afa5a8849643}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Accel.h" />
+    <ClInclude Include="Headers\Counter.h" />
+    <ClInclude Include="Headers\FSR.h" />
+    <ClInclude Include="Headers\Gyro.h" />
+    <ClInclude Include="Headers\IMU.h" />
+    <ClInclude Include="Headers\Mag.h" />
+    <ClInclude Include="Headers\Sensor.h" />
+    <ClInclude Include="Headers\Temperature.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Accel.cpp" />
+    <ClCompile Include="Src\Counter.cpp" />
+    <ClCompile Include="Src\FSR.cpp" />
+    <ClCompile Include="Src\Gyro.cpp" />
+    <ClCompile Include="Src\IMU.cpp" />
+    <ClCompile Include="Src\Mag.cpp" />
+    <ClCompile Include="Src\Sensor.cpp" />
+    <ClCompile Include="Src\Sensors.cpp" />
+    <ClCompile Include="Src\Temperature.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
