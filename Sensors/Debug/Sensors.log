@@ -1,19 +1,12 @@
 ﻿  Accel.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\Accel.cpp(9,10): fatal error C1083: Cannot open include file: 'Accel.h': No such file or directory
   Counter.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\Counter.cpp(8,10): fatal error C1083: Cannot open include file: 'Counter.h': No such file or directory
   FSR.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\FSR.cpp(9,10): fatal error C1083: Cannot open include file: 'FSR.h': No such file or directory
   Gyro.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\Gyro.cpp(9,10): fatal error C1083: Cannot open include file: 'Gyro.h': No such file or directory
   IMU.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\IMU.cpp(7,10): fatal error C1083: Cannot open include file: 'IMU.H': No such file or directory
   Mag.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\Mag.cpp(9,10): fatal error C1083: Cannot open include file: 'Mag.h': No such file or directory
   Sensor.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\Sensor.cpp(8,10): fatal error C1083: Cannot open include file: 'Sensor.h': No such file or directory
   Sensors.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\Sensors.cpp(9,10): fatal error C1083: Cannot open include file: 'Sensor.h': No such file or directory
   Temperature.cpp
-C:\Users\Owner\Documents\GitHub\CppExo\Sensors\Src\Temperature.cpp(8,10): fatal error C1083: Cannot open include file: 'Temperature.h': No such file or directory
   Generating Code...
+C:\Users\Owner\Documents\GitHub\Exo2\Sensors\Sensor.cpp(161): warning C4172: returning address of local variable or temporary: BINARY
+  Sensors.vcxproj -> C:\Users\Owner\Documents\GitHub\Exo2\Debug\Sensors.exe

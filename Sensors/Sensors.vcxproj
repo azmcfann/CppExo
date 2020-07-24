@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{F5441E4E-490B-4B81-B3A0-17B41CAAB5D6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{502b25de-74ec-44f6-a04a-daa71dd59ef5}</ProjectGuid>
     <RootNamespace>Sensors</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -73,37 +73,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Documents\GitHub\Exo2\Communication;C:\Users\Owner\Documents\GitHub\Exo2\Managers;C:\Users\Owner\Documents\GitHub\Exo2\Observers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -112,8 +97,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -128,10 +111,20 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -147,36 +140,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Communication\Communication.vcxproj">
-      <Project>{f6397826-d02a-4960-b508-edf50843f5c2}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Managers\Managers.vcxproj">
-      <Project>{efc58858-d718-4c81-b6ab-7e87e032ae84}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Observers\Observers.vcxproj">
-      <Project>{19eb2935-cdb3-4072-b2d8-afa5a8849643}</Project>
-    </ProjectReference>
+    <ClCompile Include="Accel.cpp" />
+    <ClCompile Include="Counter.cpp" />
+    <ClCompile Include="FSR.cpp" />
+    <ClCompile Include="Gyro.cpp" />
+    <ClCompile Include="IMU.cpp" />
+    <ClCompile Include="Mag.cpp" />
+    <ClCompile Include="Sensor.cpp" />
+    <ClCompile Include="Sensors.cpp" />
+    <ClCompile Include="Temperature.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\Accel.h" />
-    <ClInclude Include="Headers\Counter.h" />
-    <ClInclude Include="Headers\FSR.h" />
-    <ClInclude Include="Headers\Gyro.h" />
-    <ClInclude Include="Headers\IMU.h" />
-    <ClInclude Include="Headers\Mag.h" />
-    <ClInclude Include="Headers\Sensor.h" />
-    <ClInclude Include="Headers\Temperature.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Src\Accel.cpp" />
-    <ClCompile Include="Src\Counter.cpp" />
-    <ClCompile Include="Src\FSR.cpp" />
-    <ClCompile Include="Src\Gyro.cpp" />
-    <ClCompile Include="Src\IMU.cpp" />
-    <ClCompile Include="Src\Mag.cpp" />
-    <ClCompile Include="Src\Sensor.cpp" />
-    <ClCompile Include="Src\Sensors.cpp" />
-    <ClCompile Include="Src\Temperature.cpp" />
+    <ClInclude Include="Accel.h" />
+    <ClInclude Include="Counter.h" />
+    <ClInclude Include="FSR.h" />
+    <ClInclude Include="Gyro.h" />
+    <ClInclude Include="IMU.h" />
+    <ClInclude Include="Mag.h" />
+    <ClInclude Include="Sensor.h" />
+    <ClInclude Include="Temperature.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
