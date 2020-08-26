@@ -4,8 +4,7 @@
     "\\Communication",
     "\\Managers",
     "\\Observers",
-    "\\Sensors",
-    "\\Sensors\\Source"
+    "\\Sensors"
   ],
   "SelectedNode": "\\CMakeExo.cpp",
   "PreviewInSolutionExplorer": false

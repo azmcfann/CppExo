@@ -32,6 +32,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("C:/Users/Owner/Documents/GitHub/CMakeExo/out/build/x64-Debug/Sensors/cmake_install.cmake")
+  include("C:/Users/Owner/Documents/GitHub/CMakeExo/out/build/x64-Debug/Observers/cmake_install.cmake")
+  include("C:/Users/Owner/Documents/GitHub/CMakeExo/out/build/x64-Debug/Managers/cmake_install.cmake")
+  include("C:/Users/Owner/Documents/GitHub/CMakeExo/out/build/x64-Debug/Communication/cmake_install.cmake")
+
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
