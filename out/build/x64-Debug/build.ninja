@@ -71,6 +71,13 @@ build CMakeFiles\CMakeExo.dir\Filters\Src\BaseFilter.cpp.obj: CXX_COMPILER__CMak
   TARGET_COMPILE_PDB = CMakeFiles\CMakeExo.dir\
   TARGET_PDB = CMakeExo.pdb
 
+build CMakeFiles\CMakeExo.dir\Filters\Src\HighPass.cpp.obj: CXX_COMPILER__CMakeExo_Debug ..\..\..\Filters\Src\HighPass.cpp || cmake_object_order_depends_target_CMakeExo_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\CMakeExo.dir
+  OBJECT_FILE_DIR = CMakeFiles\CMakeExo.dir\Filters\Src
+  TARGET_COMPILE_PDB = CMakeFiles\CMakeExo.dir\
+  TARGET_PDB = CMakeExo.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CMakeExo
@@ -79,7 +86,7 @@ build CMakeFiles\CMakeExo.dir\Filters\Src\BaseFilter.cpp.obj: CXX_COMPILER__CMak
 #############################################
 # Link the executable CMakeExo.exe
 
-build CMakeExo.exe: CXX_EXECUTABLE_LINKER__CMakeExo_Debug CMakeFiles\CMakeExo.dir\CMakeExo.cpp.obj CMakeFiles\CMakeExo.dir\Communication\Src\Ethernet.cpp.obj CMakeFiles\CMakeExo.dir\Communication\Src\Communication.cpp.obj CMakeFiles\CMakeExo.dir\Filters\Src\BaseFilter.cpp.obj
+build CMakeExo.exe: CXX_EXECUTABLE_LINKER__CMakeExo_Debug CMakeFiles\CMakeExo.dir\CMakeExo.cpp.obj CMakeFiles\CMakeExo.dir\Communication\Src\Ethernet.cpp.obj CMakeFiles\CMakeExo.dir\Communication\Src\Communication.cpp.obj CMakeFiles\CMakeExo.dir\Filters\Src\BaseFilter.cpp.obj CMakeFiles\CMakeExo.dir\Filters\Src\HighPass.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

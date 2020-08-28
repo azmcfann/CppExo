@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Communication",
-    "\\Managers",
-    "\\Observers",
-    "\\Sensors"
+    "\\Filters",
+    "\\Filters\\Include",
+    "\\Filters\\Src"
   ],
-  "SelectedNode": "\\CMakeExo.cpp",
+  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

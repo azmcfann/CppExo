@@ -1,4 +1,4 @@
-/*#include "BaseFilter.h"
+#include "Filters/BaseFilter.h"
 #include <string>
 
 using namespace std;
@@ -9,9 +9,9 @@ BaseFilter::BaseFilter(Sensor newSen) {
 		0, 0, 0, 0 };
 }
 
-BaseFilter::Update(int* newVal){
+int* BaseFilter::Update(int* newVal){
 //TODO
-this.values = newval;
+	this.values = newval;
+	return *value;
 }
 
-*/

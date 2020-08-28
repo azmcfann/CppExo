@@ -1,0 +1,10 @@
+^C:\USERS\OWNER\DOCUMENTS\GITHUB\CMAKEEXO\OUT\BUILD\CMAKEFILES\0966D67FBCC91FE63EEF5B8F8B031E95\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Owner/Documents/GitHub/CMakeExo -BC:/Users/Owner/Documents/GitHub/CMakeExo/out/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Owner/Documents/GitHub/CMakeExo/out/build/CMakeExo.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -12,5 +12,5 @@ public:
 
 private:
 	Sensor thisSensor;
-	int[8] values;
+	int[8] value;
 };

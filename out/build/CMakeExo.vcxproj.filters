@@ -4,9 +4,24 @@
     <ClCompile Include="C:\Users\Owner\Documents\GitHub\CMakeExo\CMakeExo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Owner\Documents\GitHub\CMakeExo\Communication\Src\Ethernet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Owner\Documents\GitHub\CMakeExo\Communication\Src\Communication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Owner\Documents\GitHub\CMakeExo\Filters\Src\BaseFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\Owner\Documents\GitHub\CMakeExo\CMakeExo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Owner\Documents\GitHub\CMakeExo\Communication\Include\Communication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Owner\Documents\GitHub\CMakeExo\Filters\Include\BaseFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
